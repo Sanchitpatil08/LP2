@@ -35,7 +35,7 @@ Once installation is complete:
 - Create and set a default project by running:
 
 ```bash
-gcloud projects create Riya-pract--project1 --set-as-default
+gcloud projects create riya-pract--project1final --set-as-default
 ```
 
 ---
