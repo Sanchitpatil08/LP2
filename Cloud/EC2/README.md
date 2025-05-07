@@ -38,15 +38,6 @@ Go to [AWS Console](https://console.aws.amazon.com/) and log in with your creden
 
 ### 3. Connect to the EC2 Instance
 
-Use SSH to connect:
-
-```bash
-ssh -i your-key.pem ec2-user@your-ec2-public-ip
-```
-
-Replace `your-key.pem` and `your-ec2-public-ip` accordingly.
-
----
 
 ### 4. Install Node.js and Git
 
@@ -114,23 +105,18 @@ Your real-time chat app is now successfully deployed on AWS EC2 and accessible o
 
 ---
 
-## 🧹 Optional: Run in Background (Optional)
-
-Use `pm2` or `nohup` to run the app continuously even after you log out:
-
-```bash
-npm install -g pm2
-pm2 start index.js
+### 10. If Already Deployed Code on instane 
+ - Restart the instance
+ - Connect to the instance
+ - Run these Commands
+ - ```bash
+   cd Chat-App
+   node index.js
 ```
+- Your chat app is live on Port 9001
 
----
 
-## 🔒 Note
 
-- Keep your `.pem` key secure
-- Terminate your EC2 instance when not in use to avoid charges
-
----
 
 ## 💬 Author
 
